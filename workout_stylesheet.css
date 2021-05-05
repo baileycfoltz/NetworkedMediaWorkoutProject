@@ -1,0 +1,97 @@
+.title {
+  font-family: 'Archivo', sans-serif;
+  font-size:45px;
+  color:#FFFFFF;
+  text-align: center;
+}
+  .subtitle {
+    font-family: 'Archivo', sans-serif;
+    font-size:35px;
+    color:#FFFFFF;
+    text-align: center;
+  }
+  .normal {
+    font-family: 'Poppins', sans-serif;
+    font-size:23px;
+    color:#FFFFFF;
+    text-align: center;
+  }
+  .button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    color: #e56301;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button:hover {
+    padding: 18px 35px;
+    font-size: 18px;
+  }
+  .titlei {
+    font-family: 'Archivo', sans-serif;
+    font-size:45px;
+    color:#e56301;
+    text-align: center;
+  }
+    .subtitlei {
+      font-family: 'Archivo', sans-serif;
+      font-size:35px;
+      color:#e56301;
+      text-align: center;
+    }
+    .normali {
+      font-family: 'Poppins', sans-serif;
+      font-size:23px;
+      color:#e56301;
+      text-align: center;
+    }
+    .errori {
+      font-family: 'Poppins', sans-serif;
+      font-size:20px;
+      color:#db1002;
+      text-align: center;
+    }
+    .buttoni {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F98b18;
+      border: none;
+      border-radius: 10px;
+      color: #FFFFFF;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .buttoni:hover {
+      padding: 18px 35px;
+      font-size: 18px;
+    }
+    .disabledbuttoni {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F98b18;
+      opacity: 0.6;
+      cursor: not-allowed;
+      border: none;
+      border-radius: 10px;
+      color: #FFFFFF;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+    }
+    .disabledbuttoni:hover {
+      padding: 18px 35px;
+      font-size: 18px;
+    }

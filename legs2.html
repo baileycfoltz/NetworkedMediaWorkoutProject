@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins:wght@300&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" type="text/css" href="workout_stylesheet.css" media="screen"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+</style>
+</head>
+<body onload="generateWorkout();">
+<body style="background-color:#F98b18;padding: 2em 50px 0 50px">
+
+<p style= "text-align: center">
+<span class="subtitle">legs - intermediate</span><br><br><br></p>
+<p style= "text-align: center" id="wo1"></p>
+<p style= "text-align: center" id="wo2"></p>
+<p style= "text-align: center" id="wo3"></p>
+<p style= "text-align: center" id="wo4"></p>
+<p style= "text-align: center" id="wo5"></p>
+<p style= "text-align: center" id="wo6"></p>
+<p style= "text-align: center" id="wo7"></p>
+<p style= "text-align: center" id="wo8"></p>
+<p style= "text-align: center" id="wo9"></p>
+<p style= "text-align: center" id="wo10"></p><br><br>
+<p style= "text-align: center"><button class="button" onclick="document.location='finished.html'">i'm finished</button></p>
+
+<script>
+
+function generateWorkout() {
+var number1 = Math.floor((Math.random() * 3) + 1);
+if (number1 == 1) {generateWorkout1();} 
+    else if (number1 == 2) {generateWorkout2();} 
+    else if (number1 == 3) {generateWorkout3();} 
+}
+
+function generateWorkout1() {
+var number1 = Math.floor((Math.random() * 10) + 1);
+var number2 = Math.floor((Math.random() * 10) + 1);
+var number3 = Math.floor((Math.random() * 10) + 1);
+var number4 = Math.floor((Math.random() * 10) + 1);
+var number5 = Math.floor((Math.random() * 10) + 1);
+var number6 = Math.floor((Math.random() * 10) + 1);
+var number7 = Math.floor((Math.random() * 10) + 1);
+var number8 = Math.floor((Math.random() * 10) + 1);
+var number9 = Math.floor((Math.random() * 10) + 1);
+var number10 = Math.floor((Math.random() * 10) + 1);
+var opt1 = "<span class='normal'>sumo squats x 15</span><br><img src='images/workoutimg/squat.png' alt='sumo squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat2.png' alt='sumo squat 2' style='width:150px;height:150px;'>";
+var opt2 = "<span class='normal'>lunges x 12</span><br><img src='images/workoutimg/lunge.png' alt='lunge 1' style='width:150px;height:150px;'><img src='images/workoutimg/lunge2.png' alt='lunge 2' style='width:150px;height:150px;'>";
+var opt3 = "<span class='normal'>squats x 15</span><br><img src='images/workoutimg/squat3.png' alt='squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat4.png' alt='squat 2' style='width:150px;height:150px;'><img src='images/workoutimg/commandos3.png' alt='commandos 3' style='width:150px;height:150px;'>";
+var opt4 = "<span class='normal'>jump squats x 10</span><br><img src='images/workoutimg/squat4.png' alt='jump squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat5.png' alt='jump squat 2' style='width:150px;height:150px;'>";
+var opt5 = "<span class='normal'>donkey kicks x 15</span><br><img src='images/workoutimg/firehydrant.png' alt='donkey kick 1' style='width:150px;height:150px;'><img src='images/workoutimg/donkey.png' alt='donkey kick 1' style='width:150px;height:150px;'>";
+var opt6 = "<span class='normal'>straight leg raise x 15</span><br><img src='images/workoutimg/straightleg.png' alt='straight leg raise 1' style='width:150px;height:150px;'><img src='images/workoutimg/straightleg3.png' alt='straight leg raise 2' style='width:150px;height:150px;'><img src='images/workoutimg/straightleg4.png' alt='straight leg raise 3' style='width:150px;height:150px;'>";
+var opt7 = "<span class='normal'>jump lunges x 10</span><br><img src='images/workoutimg/lunge.png' alt='jump lunge 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat5.png' alt='jump lunge 2' style='width:150px;height:150px;'><img src='images/workoutimg/lunge2.png' alt='jump lunge 3' style='width:150px;height:150px;'>";
+var opt8 = "<span class='normal'>burpees x 10</span><br><br><img src='images/workoutimg/burpee.png' alt='burpee 1' style='width:150px;height:150px;'><img src='images/workoutimg/droppushup2.png' alt='burpee 2' style='width:150px;height:150px;'><img src='images/workoutimg/pushup1.png' alt='burpee 3' style='width:150px;height:150px;'><img src='images/workoutimg/droppushup2.png' alt='burpee 4' style='width:150px;height:150px;'>";
+var opt9 = "<span class='normal'>x-jumps x 10</span><br><br><img src='images/workoutimg/xjump.png' alt='x-jump 1' style='width:150px;height:150px;'><img src='images/workoutimg/xjump3.png' alt='x-jump 2' style='width:150px;height:150px;'><img src='images/workoutimg/xjump2.png' alt='x-jump 3' style='width:150px;height:150px;'>";
+var opt10 = "<span class='normal'>in + out squat pulses x 10</span><br><img src='images/workoutimg/squat2.png' alt='in + out squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat.png' alt='in + out squat 2' style='width:150px;height:150px;'><img src='images/workoutimg/squat4.png' alt='in + out squat 3' style='width:150px;height:150px;'>";
+if (number1 == 1) {var workout1 = opt1} 
+    else if (number1 == 2) {var workout1 = opt2} 
+    else if (number1 == 3) {var workout1 = opt3} 
+    else if (number1 == 4) {var workout1 = opt4} 
+    else if (number1 == 5) {var workout1 = opt5} 
+    else if (number1 == 6) {var workout1 = opt6} 
+    else if (number1 == 7) {var workout1 = opt7} 
+    else if (number1 == 8) {var workout1 = opt8} 
+    else if (number1 == 9) {var workout1 = opt9} 
+    else if (number1 == 10) {var workout1 = opt10} 
+if (number2 == 1) {var workout2 = opt1} 
+    else if (number2 == 2) {var workout2 = opt2} 
+    else if (number2 == 3) {var workout2 = opt3} 
+    else if (number2 == 4) {var workout2 = opt4} 
+    else if (number2 == 5) {var workout2 = opt5} 
+    else if (number2 == 6) {var workout2 = opt6} 
+    else if (number2 == 7) {var workout2 = opt7} 
+    else if (number2 == 8) {var workout2 = opt8} 
+    else if (number2 == 9) {var workout2 = opt9} 
+    else if (number2 == 10) {var workout2 = opt10} 
+if (number3 == 1) {var workout3 = opt1} 
+    else if (number3 == 2) {var workout3 = opt2} 
+    else if (number3 == 3) {var workout3 = opt3} 
+    else if (number3 == 4) {var workout3 = opt4} 
+    else if (number3 == 5) {var workout3 = opt5} 
+    else if (number3 == 6) {var workout3 = opt6} 
+    else if (number3 == 7) {var workout3 = opt7} 
+    else if (number3 == 8) {var workout3 = opt8} 
+    else if (number3 == 9) {var workout3 = opt9} 
+    else if (number3 == 10) {var workout3 = opt10} 
+if (number4 == 1) {var workout4 = opt1} 
+    else if (number4 == 2) {var workout4 = opt2} 
+    else if (number4 == 3) {var workout4 = opt3} 
+    else if (number4 == 4) {var workout4 = opt4} 
+    else if (number4 == 5) {var workout4 = opt5} 
+    else if (number4 == 6) {var workout4 = opt6} 
+    else if (number4 == 7) {var workout4 = opt7} 
+    else if (number4 == 8) {var workout4 = opt8} 
+    else if (number4 == 9) {var workout4 = opt9} 
+    else if (number4 == 10) {var workout4 = opt10} 
+if (number5 == 1) {var workout5 = opt1} 
+    else if (number5 == 2) {var workout5 = opt2} 
+    else if (number5 == 3) {var workout5 = opt3} 
+    else if (number5 == 4) {var workout5 = opt4} 
+    else if (number5 == 5) {var workout5 = opt5} 
+    else if (number5 == 6) {var workout5 = opt6} 
+    else if (number5 == 7) {var workout5 = opt7}
+    else if (number5 == 8) {var workout5 = opt8}  
+    else if (number5 == 9) {var workout5 = opt9}
+    else if (number5 == 10) {var workout5 = opt10}  
+if (number6 == 1) {var workout6 = opt1} 
+    else if (number6 == 2) {var workout6 = opt2} 
+    else if (number6 == 3) {var workout5 = opt3} 
+    else if (number6 == 4) {var workout6 = opt4} 
+    else if (number6 == 5) {var workout6 = opt5} 
+    else if (number6 == 6) {var workout6 = opt6} 
+    else if (number6 == 7) {var workout6 = opt7}
+    else if (number6 == 8) {var workout6 = opt8}  
+    else if (number6 == 9) {var workout6 = opt9}
+    else if (number6 == 10) {var workout6 = opt10}  
+if (number7 == 1) {var workout7 = opt1} 
+    else if (number7 == 2) {var workout7 = opt2} 
+    else if (number7 == 3) {var workout7 = opt3} 
+    else if (number7 == 4) {var workout7 = opt4} 
+    else if (number7 == 5) {var workout7 = opt5} 
+    else if (number7 == 6) {var workout7 = opt6} 
+    else if (number7 == 7) {var workout7 = opt7}
+    else if (number7 == 8) {var workout7 = opt8}  
+    else if (number7 == 9) {var workout7 = opt9}
+    else if (number7 == 10) {var workout7 = opt10}  
+if (number8 == 1) {var workout8 = opt1} 
+    else if (number8 == 2) {var workout8 = opt2} 
+    else if (number8 == 3) {var workout8 = opt3} 
+    else if (number8 == 4) {var workout8 = opt4} 
+    else if (number8 == 5) {var workout8 = opt5} 
+    else if (number8 == 6) {var workout8 = opt6} 
+    else if (number8 == 7) {var workout8 = opt7}
+    else if (number8 == 8) {var workout8 = opt8}  
+    else if (number8 == 9) {var workout8 = opt9}
+    else if (number8 == 10) {var workout8 = opt10}  
+if (number9 == 1) {var workout9 = opt1} 
+    else if (number9 == 2) {var workout9 = opt2} 
+    else if (number9 == 3) {var workout9 = opt3} 
+    else if (number9 == 4) {var workout9 = opt4} 
+    else if (number9 == 5) {var workout9 = opt5} 
+    else if (number9 == 6) {var workout9 = opt6} 
+    else if (number9 == 7) {var workout9 = opt7}
+    else if (number9 == 8) {var workout9 = opt8}  
+    else if (number9 == 9) {var workout9 = opt9}
+    else if (number9 == 10) {var workout9 = opt10}  
+if (number10 == 1) {var workout10 = opt1} 
+    else if (number10 == 2) {var workout10 = opt2} 
+    else if (number10 == 3) {var workout10 = opt3} 
+    else if (number10 == 4) {var workout10 = opt4} 
+    else if (number10 == 5) {var workout10 = opt5} 
+    else if (number10 == 6) {var workout10 = opt6} 
+    else if (number10 == 7) {var workout10 = opt7}
+    else if (number10 == 8) {var workout10 = opt8}  
+    else if (number10 == 9) {var workout10 = opt9}
+    else if (number10 == 10) {var workout10 = opt10}  
+var ww1 = document.getElementById("wo1")
+ww1.innerHTML = workout1
+var ww2 = document.getElementById("wo2")
+ww2.innerHTML = workout2
+var ww3 = document.getElementById("wo3")
+ww3.innerHTML = workout3
+var ww4 = document.getElementById("wo4")
+ww4.innerHTML = workout4
+var ww5 = document.getElementById("wo5")
+ww5.innerHTML = workout5
+var ww6 = document.getElementById("wo6")
+ww6.innerHTML = workout6
+var ww7 = document.getElementById("wo7")
+ww7.innerHTML = workout7
+var ww8 = document.getElementById("wo8")
+ww8.innerHTML = workout8
+var ww9 = document.getElementById("wo9")
+ww9.innerHTML = workout9
+var ww10 = document.getElementById("wo10")
+ww10.innerHTML = workout10
+}
+
+function generateWorkout2() {
+var number1 = Math.floor((Math.random() * 10) + 1);
+var number2 = Math.floor((Math.random() * 10) + 1);
+var number3 = Math.floor((Math.random() * 10) + 1);
+var number4 = Math.floor((Math.random() * 10) + 1);
+var number5 = Math.floor((Math.random() * 10) + 1);
+var number6 = Math.floor((Math.random() * 10) + 1);
+var number7 = Math.floor((Math.random() * 10) + 1);
+var number8 = Math.floor((Math.random() * 10) + 1);
+var number9 = Math.floor((Math.random() * 10) + 1);
+var number10 = Math.floor((Math.random() * 10) + 1);
+var opt1 = "<span class='normal'>sumo squats x 1 min.</span><br><img src='images/workoutimg/squat.png' alt='sumo squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat2.png' alt='sumo squat 2' style='width:150px;height:150px;'>";
+var opt2 = "<span class='normal'>lunges x 1 min.</span><br><img src='images/workoutimg/lunge.png' alt='lunge 1' style='width:150px;height:150px;'><img src='images/workoutimg/lunge2.png' alt='lunge 2' style='width:150px;height:150px;'>";
+var opt3 = "<span class='normal'>squats x 1 min.</span><br><img src='images/workoutimg/squat3.png' alt='squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat4.png' alt='squat 2' style='width:150px;height:150px;'><img src='images/workoutimg/commandos3.png' alt='commandos 3' style='width:150px;height:150px;'>";
+var opt4 = "<span class='normal'>jump squats x 30 sec.</span><br><img src='images/workoutimg/squat4.png' alt='jump squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat5.png' alt='jump squat 2' style='width:150px;height:150px;'>";
+var opt5 = "<span class='normal'>donkey kicks x 1 min.</span><br><img src='images/workoutimg/firehydrant.png' alt='donkey kick 1' style='width:150px;height:150px;'><img src='images/workoutimg/donkey.png' alt='donkey kick 1' style='width:150px;height:150px;'>";
+var opt6 = "<span class='normal'>straight leg raise x 1 min.</span><br><img src='images/workoutimg/straightleg.png' alt='straight leg raise 1' style='width:150px;height:150px;'><img src='images/workoutimg/straightleg3.png' alt='straight leg raise 2' style='width:150px;height:150px;'><img src='images/workoutimg/straightleg4.png' alt='straight leg raise 3' style='width:150px;height:150px;'>";
+var opt7 = "<span class='normal'>jump lunges x 30 sec.</span><br><img src='images/workoutimg/lunge.png' alt='jump lunge 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat5.png' alt='jump lunge 2' style='width:150px;height:150px;'><img src='images/workoutimg/lunge2.png' alt='jump lunge 3' style='width:150px;height:150px;'>";
+var opt8 = "<span class='normal'>burpees x 1 min.</span><br><br><img src='images/workoutimg/burpee.png' alt='burpee 1' style='width:150px;height:150px;'><img src='images/workoutimg/droppushup2.png' alt='burpee 2' style='width:150px;height:150px;'><img src='images/workoutimg/pushup1.png' alt='burpee 3' style='width:150px;height:150px;'><img src='images/workoutimg/droppushup2.png' alt='burpee 4' style='width:150px;height:150px;'>";
+var opt9 = "<span class='normal'>x-jumps x 30 sec.</span><br><br><img src='images/workoutimg/xjump.png' alt='x-jump 1' style='width:150px;height:150px;'><img src='images/workoutimg/xjump3.png' alt='x-jump 2' style='width:150px;height:150px;'><img src='images/workoutimg/xjump2.png' alt='x-jump 3' style='width:150px;height:150px;'>";
+var opt10 = "<span class='normal'>in + out squat pulses x 1 min.</span><br><img src='images/workoutimg/squat2.png' alt='in + out squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat.png' alt='in + out squat 2' style='width:150px;height:150px;'><img src='images/workoutimg/squat4.png' alt='in + out squat 3' style='width:150px;height:150px;'>";
+if (number1 == 1) {var workout1 = opt1} 
+    else if (number1 == 2) {var workout1 = opt2} 
+    else if (number1 == 3) {var workout1 = opt3} 
+    else if (number1 == 4) {var workout1 = opt4} 
+    else if (number1 == 5) {var workout1 = opt5} 
+    else if (number1 == 6) {var workout1 = opt6} 
+    else if (number1 == 7) {var workout1 = opt7} 
+    else if (number1 == 8) {var workout1 = opt8} 
+    else if (number1 == 9) {var workout1 = opt9} 
+    else if (number1 == 10) {var workout1 = opt10} 
+if (number2 == 1) {var workout2 = opt1} 
+    else if (number2 == 2) {var workout2 = opt2} 
+    else if (number2 == 3) {var workout2 = opt3} 
+    else if (number2 == 4) {var workout2 = opt4} 
+    else if (number2 == 5) {var workout2 = opt5} 
+    else if (number2 == 6) {var workout2 = opt6} 
+    else if (number2 == 7) {var workout2 = opt7} 
+    else if (number2 == 8) {var workout2 = opt8} 
+    else if (number2 == 9) {var workout2 = opt9} 
+    else if (number2 == 10) {var workout2 = opt10} 
+if (number3 == 1) {var workout3 = opt1} 
+    else if (number3 == 2) {var workout3 = opt2} 
+    else if (number3 == 3) {var workout3 = opt3} 
+    else if (number3 == 4) {var workout3 = opt4} 
+    else if (number3 == 5) {var workout3 = opt5} 
+    else if (number3 == 6) {var workout3 = opt6} 
+    else if (number3 == 7) {var workout3 = opt7} 
+    else if (number3 == 8) {var workout3 = opt8} 
+    else if (number3 == 9) {var workout3 = opt9} 
+    else if (number3 == 10) {var workout3 = opt10} 
+if (number4 == 1) {var workout4 = opt1} 
+    else if (number4 == 2) {var workout4 = opt2} 
+    else if (number4 == 3) {var workout4 = opt3} 
+    else if (number4 == 4) {var workout4 = opt4} 
+    else if (number4 == 5) {var workout4 = opt5} 
+    else if (number4 == 6) {var workout4 = opt6} 
+    else if (number4 == 7) {var workout4 = opt7} 
+    else if (number4 == 8) {var workout4 = opt8} 
+    else if (number4 == 9) {var workout4 = opt9} 
+    else if (number4 == 10) {var workout4 = opt10} 
+if (number5 == 1) {var workout5 = opt1} 
+    else if (number5 == 2) {var workout5 = opt2} 
+    else if (number5 == 3) {var workout5 = opt3} 
+    else if (number5 == 4) {var workout5 = opt4} 
+    else if (number5 == 5) {var workout5 = opt5} 
+    else if (number5 == 6) {var workout5 = opt6} 
+    else if (number5 == 7) {var workout5 = opt7}
+    else if (number5 == 8) {var workout5 = opt8}  
+    else if (number5 == 9) {var workout5 = opt9}
+    else if (number5 == 10) {var workout5 = opt10}  
+if (number6 == 1) {var workout6 = opt1} 
+    else if (number6 == 2) {var workout6 = opt2} 
+    else if (number6 == 3) {var workout5 = opt3} 
+    else if (number6 == 4) {var workout6 = opt4} 
+    else if (number6 == 5) {var workout6 = opt5} 
+    else if (number6 == 6) {var workout6 = opt6} 
+    else if (number6 == 7) {var workout6 = opt7}
+    else if (number6 == 8) {var workout6 = opt8}  
+    else if (number6 == 9) {var workout6 = opt9}
+    else if (number6 == 10) {var workout6 = opt10}  
+if (number7 == 1) {var workout7 = opt1} 
+    else if (number7 == 2) {var workout7 = opt2} 
+    else if (number7 == 3) {var workout7 = opt3} 
+    else if (number7 == 4) {var workout7 = opt4} 
+    else if (number7 == 5) {var workout7 = opt5} 
+    else if (number7 == 6) {var workout7 = opt6} 
+    else if (number7 == 7) {var workout7 = opt7}
+    else if (number7 == 8) {var workout7 = opt8}  
+    else if (number7 == 9) {var workout7 = opt9}
+    else if (number7 == 10) {var workout7 = opt10}  
+if (number8 == 1) {var workout8 = opt1} 
+    else if (number8 == 2) {var workout8 = opt2} 
+    else if (number8 == 3) {var workout8 = opt3} 
+    else if (number8 == 4) {var workout8 = opt4} 
+    else if (number8 == 5) {var workout8 = opt5} 
+    else if (number8 == 6) {var workout8 = opt6} 
+    else if (number8 == 7) {var workout8 = opt7}
+    else if (number8 == 8) {var workout8 = opt8}  
+    else if (number8 == 9) {var workout8 = opt9}
+    else if (number8 == 10) {var workout8 = opt10}  
+if (number9 == 1) {var workout9 = opt1} 
+    else if (number9 == 2) {var workout9 = opt2} 
+    else if (number9 == 3) {var workout9 = opt3} 
+    else if (number9 == 4) {var workout9 = opt4} 
+    else if (number9 == 5) {var workout9 = opt5} 
+    else if (number9 == 6) {var workout9 = opt6} 
+    else if (number9 == 7) {var workout9 = opt7}
+    else if (number9 == 8) {var workout9 = opt8}  
+    else if (number9 == 9) {var workout9 = opt9}
+    else if (number9 == 10) {var workout9 = opt10}  
+if (number10 == 1) {var workout10 = opt1} 
+    else if (number10 == 2) {var workout10 = opt2} 
+    else if (number10 == 3) {var workout10 = opt3} 
+    else if (number10 == 4) {var workout10 = opt4} 
+    else if (number10 == 5) {var workout10 = opt5} 
+    else if (number10 == 6) {var workout10 = opt6} 
+    else if (number10 == 7) {var workout10 = opt7}
+    else if (number10 == 8) {var workout10 = opt8}  
+    else if (number10 == 9) {var workout10 = opt9}
+    else if (number10 == 10) {var workout10 = opt10}  
+var ww1 = document.getElementById("wo1")
+ww1.innerHTML = workout1
+var ww2 = document.getElementById("wo2")
+ww2.innerHTML = workout2
+var ww3 = document.getElementById("wo3")
+ww3.innerHTML = workout3
+var ww4 = document.getElementById("wo4")
+ww4.innerHTML = workout4
+var ww5 = document.getElementById("wo5")
+ww5.innerHTML = workout5
+var ww6 = document.getElementById("wo6")
+ww6.innerHTML = workout6
+var ww7 = document.getElementById("wo7")
+ww7.innerHTML = workout7
+var ww8 = document.getElementById("wo8")
+ww8.innerHTML = workout8
+var ww9 = document.getElementById("wo9")
+ww9.innerHTML = workout9
+var ww10 = document.getElementById("wo10")
+ww10.innerHTML = workout10
+}
+
+function generateWorkout3() {
+var number1 = Math.floor((Math.random() * 10) + 1);
+var number2 = Math.floor((Math.random() * 10) + 1);
+var number3 = Math.floor((Math.random() * 10) + 1);
+var number4 = Math.floor((Math.random() * 10) + 1);
+var number5 = Math.floor((Math.random() * 10) + 1);
+var number6 = Math.floor((Math.random() * 10) + 1);
+var number7 = Math.floor((Math.random() * 10) + 1);
+var number8 = Math.floor((Math.random() * 10) + 1);
+var number9 = Math.floor((Math.random() * 10) + 1);
+var number10 = Math.floor((Math.random() * 10) + 1);
+var aopt1 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>sumo squats x 10</span><br><img src='images/workoutimg/squat.png' alt='sumo squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat2.png' alt='sumo squat 2' style='width:150px;height:150px;'>";
+var aopt2 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>lunges x 10</span><br><img src='images/workoutimg/lunge.png' alt='lunge 1' style='width:150px;height:150px;'><img src='images/workoutimg/lunge2.png' alt='lunge 2' style='width:150px;height:150px;'>";
+var aopt3 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>squats x 10</span><br><img src='images/workoutimg/squat3.png' alt='squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat4.png' alt='squat 2' style='width:150px;height:150px;'><img src='images/workoutimg/commandos3.png' alt='commandos 3' style='width:150px;height:150px;'>";
+var aopt4 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>jump squats x 10</span><br><img src='images/workoutimg/squat4.png' alt='jump squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat5.png' alt='jump squat 2' style='width:150px;height:150px;'>";
+var aopt5 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>donkey kicks x 10</span><br><img src='images/workoutimg/firehydrant.png' alt='donkey kick 1' style='width:150px;height:150px;'><img src='images/workoutimg/donkey.png' alt='donkey kick 1' style='width:150px;height:150px;'>";
+var aopt6 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>straight leg raise x 10</span><br><img src='images/workoutimg/straightleg.png' alt='straight leg raise 1' style='width:150px;height:150px;'><img src='images/workoutimg/straightleg3.png' alt='straight leg raise 2' style='width:150px;height:150px;'><img src='images/workoutimg/straightleg4.png' alt='straight leg raise 3' style='width:150px;height:150px;'>";
+var aopt7 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>jump lunges x 10</span><br><img src='images/workoutimg/lunge.png' alt='jump lunge 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat5.png' alt='jump lunge 2' style='width:150px;height:150px;'><img src='images/workoutimg/lunge2.png' alt='jump lunge 3' style='width:150px;height:150px;'>";
+var aopt8 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>burpees x 10</span><br><br><img src='images/workoutimg/burpee.png' alt='burpee 1' style='width:150px;height:150px;'><img src='images/workoutimg/droppushup2.png' alt='burpee 2' style='width:150px;height:150px;'><img src='images/workoutimg/pushup1.png' alt='burpee 3' style='width:150px;height:150px;'><img src='images/workoutimg/droppushup2.png' alt='burpee 4' style='width:150px;height:150px;'>";
+var aopt9 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>x-jumps x 10</span><br><br><img src='images/workoutimg/xjump.png' alt='x-jump 1' style='width:150px;height:150px;'><img src='images/workoutimg/xjump3.png' alt='x-jump 2' style='width:150px;height:150px;'><img src='images/workoutimg/xjump2.png' alt='x-jump 3' style='width:150px;height:150px;'>";
+var aopt10 = "<span class='normal'>* repeat entire circuit x 2 *<br><br><br>in + out squat pulses x 10</span><br><img src='images/workoutimg/squat2.png' alt='in + out squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat.png' alt='in + out squat 2' style='width:150px;height:150px;'><img src='images/workoutimg/squat4.png' alt='in + out squat 3' style='width:150px;height:150px;'>";
+var opt1 = "<span class='normal'>sumo squats x 10</span><br><img src='images/workoutimg/squat.png' alt='sumo squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat2.png' alt='sumo squat 2' style='width:150px;height:150px;'>";
+var opt2 = "<span class='normal'>lunges x 10</span><br><img src='images/workoutimg/lunge.png' alt='lunge 1' style='width:150px;height:150px;'><img src='images/workoutimg/lunge2.png' alt='lunge 2' style='width:150px;height:150px;'>";
+var opt3 = "<span class='normal'>squats x 10</span><br><img src='images/workoutimg/squat3.png' alt='squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat4.png' alt='squat 2' style='width:150px;height:150px;'><img src='images/workoutimg/commandos3.png' alt='commandos 3' style='width:150px;height:150px;'>";
+var opt4 = "<span class='normal'>jump squats x 10</span><br><img src='images/workoutimg/squat4.png' alt='jump squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat5.png' alt='jump squat 2' style='width:150px;height:150px;'>";
+var opt5 = "<span class='normal'>donkey kicks x 10</span><br><img src='images/workoutimg/firehydrant.png' alt='donkey kick 1' style='width:150px;height:150px;'><img src='images/workoutimg/donkey.png' alt='donkey kick 1' style='width:150px;height:150px;'>";
+var opt6 = "<span class='normal'>straight leg raise x 10</span><br><img src='images/workoutimg/straightleg.png' alt='straight leg raise 1' style='width:150px;height:150px;'><img src='images/workoutimg/straightleg3.png' alt='straight leg raise 2' style='width:150px;height:150px;'><img src='images/workoutimg/straightleg4.png' alt='straight leg raise 3' style='width:150px;height:150px;'>";
+var opt7 = "<span class='normal'>jump lunges x 10</span><br><img src='images/workoutimg/lunge.png' alt='jump lunge 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat5.png' alt='jump lunge 2' style='width:150px;height:150px;'><img src='images/workoutimg/lunge2.png' alt='jump lunge 3' style='width:150px;height:150px;'>";
+var opt8 = "<span class='normal'>burpees x 10</span><br><br><img src='images/workoutimg/burpee.png' alt='burpee 1' style='width:150px;height:150px;'><img src='images/workoutimg/droppushup2.png' alt='burpee 2' style='width:150px;height:150px;'><img src='images/workoutimg/pushup1.png' alt='burpee 3' style='width:150px;height:150px;'><img src='images/workoutimg/droppushup2.png' alt='burpee 4' style='width:150px;height:150px;'>";
+var opt9 = "<span class='normal'>x-jumps x 10</span><br><br><img src='images/workoutimg/xjump.png' alt='x-jump 1' style='width:150px;height:150px;'><img src='images/workoutimg/xjump3.png' alt='x-jump 2' style='width:150px;height:150px;'><img src='images/workoutimg/xjump2.png' alt='x-jump 3' style='width:150px;height:150px;'>";
+var opt10 = "<span class='normal'>in + out squat pulses x 10</span><br><img src='images/workoutimg/squat2.png' alt='in + out squat 1' style='width:150px;height:150px;'><img src='images/workoutimg/squat.png' alt='in + out squat 2' style='width:150px;height:150px;'><img src='images/workoutimg/squat4.png' alt='in + out squat 3' style='width:150px;height:150px;'>";
+if (number1 == 1) {var workout1 = opt1} 
+    else if (number1 == 2) {var workout1 = opt2} 
+    else if (number1 == 3) {var workout1 = opt3} 
+    else if (number1 == 4) {var workout1 = opt4} 
+    else if (number1 == 5) {var workout1 = opt5} 
+    else if (number1 == 6) {var workout1 = opt6} 
+    else if (number1 == 7) {var workout1 = opt7} 
+    else if (number1 == 8) {var workout1 = opt8} 
+    else if (number1 == 9) {var workout1 = opt9} 
+    else if (number1 == 10) {var workout1 = opt10} 
+if (number2 == 1) {var workout2 = opt1} 
+    else if (number2 == 2) {var workout2 = opt2} 
+    else if (number2 == 3) {var workout2 = opt3} 
+    else if (number2 == 4) {var workout2 = opt4} 
+    else if (number2 == 5) {var workout2 = opt5} 
+    else if (number2 == 6) {var workout2 = opt6} 
+    else if (number2 == 7) {var workout2 = opt7} 
+    else if (number2 == 8) {var workout2 = opt8} 
+    else if (number2 == 9) {var workout2 = opt9} 
+    else if (number2 == 10) {var workout2 = opt10} 
+if (number3 == 1) {var workout3 = opt1} 
+    else if (number3 == 2) {var workout3 = opt2} 
+    else if (number3 == 3) {var workout3 = opt3} 
+    else if (number3 == 4) {var workout3 = opt4} 
+    else if (number3 == 5) {var workout3 = opt5} 
+    else if (number3 == 6) {var workout3 = opt6} 
+    else if (number3 == 7) {var workout3 = opt7} 
+    else if (number3 == 8) {var workout3 = opt8} 
+    else if (number3 == 9) {var workout3 = opt9} 
+    else if (number3 == 10) {var workout3 = opt10} 
+if (number4 == 1) {var workout4 = opt1} 
+    else if (number4 == 2) {var workout4 = opt2} 
+    else if (number4 == 3) {var workout4 = opt3} 
+    else if (number4 == 4) {var workout4 = opt4} 
+    else if (number4 == 5) {var workout4 = opt5} 
+    else if (number4 == 6) {var workout4 = opt6} 
+    else if (number4 == 7) {var workout4 = opt7} 
+    else if (number4 == 8) {var workout4 = opt8} 
+    else if (number4 == 9) {var workout4 = opt9} 
+    else if (number4 == 10) {var workout4 = opt10} 
+if (number5 == 1) {var workout5 = opt1} 
+    else if (number5 == 2) {var workout5 = opt2} 
+    else if (number5 == 3) {var workout5 = opt3} 
+    else if (number5 == 4) {var workout5 = opt4} 
+    else if (number5 == 5) {var workout5 = opt5} 
+    else if (number5 == 6) {var workout5 = opt6} 
+    else if (number5 == 7) {var workout5 = opt7}
+    else if (number5 == 8) {var workout5 = opt8}  
+    else if (number5 == 9) {var workout5 = opt9}
+    else if (number5 == 10) {var workout5 = opt10}  
+if (number6 == 1) {var workout6 = opt1} 
+    else if (number6 == 2) {var workout6 = opt2} 
+    else if (number6 == 3) {var workout5 = opt3} 
+    else if (number6 == 4) {var workout6 = opt4} 
+    else if (number6 == 5) {var workout6 = opt5} 
+    else if (number6 == 6) {var workout6 = opt6} 
+    else if (number6 == 7) {var workout6 = opt7}
+    else if (number6 == 8) {var workout6 = opt8}  
+    else if (number6 == 9) {var workout6 = opt9}
+    else if (number6 == 10) {var workout6 = opt10}  
+if (number7 == 1) {var workout7 = opt1} 
+    else if (number7 == 2) {var workout7 = opt2} 
+    else if (number7 == 3) {var workout7 = opt3} 
+    else if (number7 == 4) {var workout7 = opt4} 
+    else if (number7 == 5) {var workout7 = opt5} 
+    else if (number7 == 6) {var workout7 = opt6} 
+    else if (number7 == 7) {var workout7 = opt7}
+    else if (number7 == 8) {var workout7 = opt8}  
+    else if (number7 == 9) {var workout7 = opt9}
+    else if (number7 == 10) {var workout7 = opt10}  
+if (number8 == 1) {var workout8 = opt1} 
+    else if (number8 == 2) {var workout8 = opt2} 
+    else if (number8 == 3) {var workout8 = opt3} 
+    else if (number8 == 4) {var workout8 = opt4} 
+    else if (number8 == 5) {var workout8 = opt5} 
+    else if (number8 == 6) {var workout8 = opt6} 
+    else if (number8 == 7) {var workout8 = opt7}
+    else if (number8 == 8) {var workout8 = opt8}  
+    else if (number8 == 9) {var workout8 = opt9}
+    else if (number8 == 10) {var workout8 = opt10}  
+if (number9 == 1) {var workout9 = opt1} 
+    else if (number9 == 2) {var workout9 = opt2} 
+    else if (number9 == 3) {var workout9 = opt3} 
+    else if (number9 == 4) {var workout9 = opt4} 
+    else if (number9 == 5) {var workout9 = opt5} 
+    else if (number9 == 6) {var workout9 = opt6} 
+    else if (number9 == 7) {var workout9 = opt7}
+    else if (number9 == 8) {var workout9 = opt8}  
+    else if (number9 == 9) {var workout9 = opt9}
+    else if (number9 == 10) {var workout9 = opt10}  
+if (number10 == 1) {var workout10 = opt1} 
+    else if (number10 == 2) {var workout10 = opt2} 
+    else if (number10 == 3) {var workout10 = opt3} 
+    else if (number10 == 4) {var workout10 = opt4} 
+    else if (number10 == 5) {var workout10 = opt5} 
+    else if (number10 == 6) {var workout10 = opt6} 
+    else if (number10 == 7) {var workout10 = opt7}
+    else if (number10 == 8) {var workout10 = opt8}  
+    else if (number10 == 9) {var workout10 = opt9}
+    else if (number10 == 10) {var workout10 = opt10}  
+var ww1 = document.getElementById("wo1")
+ww1.innerHTML = workout1
+var ww2 = document.getElementById("wo2")
+ww2.innerHTML = workout2
+var ww3 = document.getElementById("wo3")
+ww3.innerHTML = workout3
+var ww4 = document.getElementById("wo4")
+ww4.innerHTML = workout4
+var ww5 = document.getElementById("wo5")
+ww5.innerHTML = workout5
+var ww6 = document.getElementById("wo6")
+ww6.innerHTML = workout6
+var ww7 = document.getElementById("wo7")
+ww7.innerHTML = workout7
+var ww8 = document.getElementById("wo8")
+ww8.innerHTML = workout8
+var ww9 = document.getElementById("wo9")
+ww9.innerHTML = workout9
+var ww10 = document.getElementById("wo10")
+ww10.innerHTML = workout10
+}
+</script>
+
+</body>
+</html>

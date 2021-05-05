@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="workout_stylesheet.css" media="screen"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+</style>
+</head>
+<body>
+<body style="background-color:#FFFFFF;padding: 2em 50px 0 50px">
+
+<p style= "text-align: center">
+<span class="titlei">find me a workout</span><br><br>
+<span class="normali">select a workout difficulty:</span><br><br>
+<input type="radio" id="beginner" name="difficulty" value="beginner">
+<label for="beginner" class="normali" >beginner</label><br>
+<input type="radio" id="intermediate" name="difficulty" value="intermediate">
+<label for="intermediate" class="normali" >intermediate</label><br>
+<input type="radio" id="expert" name="difficulty" value="expert">
+<label for="expert" class="normali" >expert</label><br></p>
+<p style= "text-align: center" id="notchecked"></p>
+<p style= "text-align: center"><br>
+<button class="buttoni" onclick="suprisechoice()">suprise me</button><br><br>
+<button class="buttoni" onclick="armschoice()">arms</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="buttoni" onclick="abschoice()">abs</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="buttoni" onclick="legschoice()">legs</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="disabledbuttoni" >dance</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- onclick="dancechoice()" -->
+<button class="disabledbuttoni" >yoga</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- onclick="yogachoice()" -->
+<button class="disabledbuttoni" >misc.</button><br><br>
+<!-- onclick="miscchoice()" -->
+<button class="buttoni" onclick="document.location='index.html'">home</button>
+</p>
+
+<script>
+
+function suprisechoice() {
+var x = document.getElementById("notchecked");
+var x1 = document.getElementById("beginner").checked;
+var x2 = document.getElementById("intermediate").checked;
+var x3 = document.getElementById("expert").checked;
+
+if (x1==true) {suprisechoice1();} 
+else if(x2==true) {suprisechoice2();} 
+else if(x3==true) {suprisechoice3();} 
+else {x.innerHTML = "<span class='errori'><i>please select a difficulty</i></span>"}
+}
+
+function suprisechoice1() {
+var number1 = Math.floor((Math.random() * 3) + 1);
+if (number1 == 1) {document.location='arms1.html'} 
+    else if (number1 == 2) {document.location='abs1.html'} 
+    else if (number1 == 3) {document.location='legs1.html'} 
+}
+function suprisechoice2() {
+var number1 = Math.floor((Math.random() * 3) + 1);
+if (number1 == 1) {document.location='arms2.html'} 
+    else if (number1 == 2) {document.location='abs2.html'} 
+    else if (number1 == 3) {document.location='legs2.html'} 
+}
+function suprisechoice3() {
+var number1 = Math.floor((Math.random() * 3) + 1);
+if (number1 == 1) {document.location='arms3.html'} 
+    else if (number1 == 2) {document.location='abs3.html'} 
+    else if (number1 == 3) {document.location='legs3.html'} 
+}
+
+function armschoice() {
+var x = document.getElementById("notchecked");
+var x1 = document.getElementById("beginner").checked;
+var x2 = document.getElementById("intermediate").checked;
+var x3 = document.getElementById("expert").checked;
+
+if (x1==true) {document.location='arms1.html'} 
+else if(x2==true) {document.location='arms2.html'} 
+else if(x3==true) {document.location='arms3.html'} 
+else {x.innerHTML = "<span class='errori'><i>please select a difficulty</i></span>"}
+}
+
+function abschoice() {
+var x = document.getElementById("notchecked");
+var x1 = document.getElementById("beginner").checked;
+var x2 = document.getElementById("intermediate").checked;
+var x3 = document.getElementById("expert").checked;
+
+if (x1==true) {document.location='abs1.html'} 
+else if(x2==true) {document.location='abs2.html'} 
+else if(x3==true) {document.location='abs3.html'} 
+else {x.innerHTML = "<span class='errori'><i>please select a difficulty</i></span>"}
+}
+
+function legschoice() {
+var x = document.getElementById("notchecked");
+var x1 = document.getElementById("beginner").checked;
+var x2 = document.getElementById("intermediate").checked;
+var x3 = document.getElementById("expert").checked;
+
+if (x1==true) {document.location='legs1.html'} 
+else if(x2==true) {document.location='legs2.html'} 
+else if(x3==true) {document.location='legs3.html'} 
+else {x.innerHTML = "<span class='errori'><i>please select a difficulty</i></span>"}
+}
+
+function dancechoice() {
+var x = document.getElementById("notchecked");
+var x1 = document.getElementById("beginner").checked;
+var x2 = document.getElementById("intermediate").checked;
+var x3 = document.getElementById("expert").checked;
+
+if (x1==true) {document.location='dance1.html'} 
+else if(x2==true) {document.location='dance2.html'} 
+else if(x3==true) {document.location='dance3.html'} 
+else {x.innerHTML = "<span class='errori'><i>please select a difficulty</i></span>"}
+}
+
+function yogachoice() {
+var x = document.getElementById("notchecked");
+var x1 = document.getElementById("beginner").checked;
+var x2 = document.getElementById("intermediate").checked;
+var x3 = document.getElementById("expert").checked;
+
+if (x1==true) {document.location='yoga1.html'} 
+else if(x2==true) {document.location='yoga2.html'} 
+else if(x3==true) {document.location='yoga3.html'} 
+else {x.innerHTML = "<span class='errori'><i>please select a difficulty</i></span>"}
+}
+
+function miscchoice() {
+var x = document.getElementById("notchecked");
+var x1 = document.getElementById("beginner").checked;
+var x2 = document.getElementById("intermediate").checked;
+var x3 = document.getElementById("expert").checked;
+
+if (x1==true) {document.location='misc1.html'} 
+else if(x2==true) {document.location='misc2.html'} 
+else if(x3==true) {document.location='misc3.html'} 
+else {x.innerHTML = "<span class='errori'><i>please select a difficulty</i></span>"}
+}
+
+</script>
+
+</body>
+</html>

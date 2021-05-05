@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="workout_stylesheet.css" media="screen"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#quotes {display: block;}
+
+</style>
+</head>
+<body>
+<body style="background-color:#F98b18;padding: 2em 50px 0 50px">
+
+<p style= "text-align: center">
+
+<span class="title">workout newtine</span><br>
+<span class="normal"><i>for when your workout routine needs something new</i></span><br>
+<img src="images/frog1.png" alt="frog" style="width:200px;height:250px;">
+<!-- <img src="images/gorilla1.png" alt="gorilla" style="width:200px;height:250px;"> -->
+<img src="images/goat1.png" alt="goat" style="width:200px;height:250px;">
+<img src="images/rabbit1.png" alt="rabbit" style="width:170px;height:220px;">
+<br><br>
+<button class="button" onclick="document.location='workoutchoice.html'">find me a workout</button><br><br>
+<button class="button" onclick="document.location='instructors.html'">meet the instructors</button><br><br>
+<button class="button" onclick="document.location='about.html'">about workout newtine</button><br><br>
+
+
+</p>
+
+<div class="quotes">
+
+</div>
+
+<script>
+
+// <br><br><span class="quotes">TEXTHERE</span><br><br><div id="line_#"><br><span class="clickquotes", onclick="addQ#()">next<br><br><br></span></div>
+
+var quote_1 = '<br><br><span class="quotes"><i>so what is astrology?</i><br><br>the oxford english dictionary says:<br><br><i>natural astrology:</i> the calculation and prediction of natural phenomena and meteorological events (such as the measurement of time, the times of tides and eclipses) on the basis of astronomical observations.<br><br><i>judicial astrology:</i> the supposed art of foretelling or counselling in human affairs by interpretation of the motions of the planets and stars; star divination, astromancy.</span><br><br><div id="line_1"><br><span class="clickquotes", onclick="addQ2()">next<br><br><br></span></div>'
+
+
+function addQ1() {
+var quotes = document.createElement('div')
+quotes.innerHTML = quote_1;
+var quotesEle = document.getElementsByClassName('quotes')[0];
+quotesEle.appendChild(quotes)
+window.scrollTo(0,document.body.scrollHeight);
+}
+
+</script>
+
+</body>
+</html>
